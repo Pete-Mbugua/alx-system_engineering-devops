@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sort -d -f -t / -k 2,2 -k 1,1 | awk 'BEGIN{ORS=","} {if ($0 == "./" || $0 == "../") {print $0} else if ($0 ~ /\/$/) {print $0} else {gsub(/^[.\/]+/, ""); print $0}}' | sed 's/,$/\n/'
+ls -amvp
