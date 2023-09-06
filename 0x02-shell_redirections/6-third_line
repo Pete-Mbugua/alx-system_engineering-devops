@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '^' ./iacta | grep -E '^3:'
+head -n 3 filename | tail -n 1
